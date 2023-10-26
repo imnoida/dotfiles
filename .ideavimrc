@@ -1,36 +1,12 @@
-set surround
 set clipboard=unnamedplus
 set smartcase
 set incsearch
 set hlsearch
 set timeout
 set timeoutlen=1000
+set relativenumber
+set surround
 let mapleader = ' '
-
-
-" Memo
-" <Leader>: Util
-" ,: Edit
-" \\: config
-
-" Get commandlist
-" :actionlist
-
-" available key
-" <A-Up>
-" <A-Down>
-" <A-S-Up>
-" <A-S-Down>
-" <A-C-S-Up>
-" <A-C-S-Down>
-" <A-C-S-Left>
-" <A-C-S-Right>
-" <C-S-Left>
-" <C-S-Right>
-" <A-C-S-H>
-" <A-C-S-L>
-" {, }
-
 
 " Basic
 nnoremap \\r :source ~/.ideavimrc<CR>
@@ -38,3 +14,6 @@ noremap x "_x
 noremap ,d "_d
 noremap ,D "_D
 nnoremap ,p :<C-u>action $Paste<CR>
+
+" Move
+nnoremap S :<C-u>action KJumpAction<CR>
