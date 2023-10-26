@@ -1,66 +1,40 @@
-" [ 🖥️ Display ]
-"-------------------
-" 無駄な描画をしない
-set lazyredraw
-" 再描画の速度が速くなるらしいけど最近の端末では無意味との噂も..
-set ttyfast
-" 検索語をハイライト
-set hlsearch
-" コマンドのタイムラグをなくす
-set ttimeoutlen=1
-" スクロールした時 常に下に表示するバッファ行の数
-set scrolloff=5
-" 相対行番号で表示
-set relativenumber
-" インサートモードから抜けると自動的にIMEをオフにする
-set iminsert=2
-" 対応する括弧やブレースを表示
-set showmatch matchtime=1
-" メッセージ表示欄を2行確保
-set cmdheight=2
-" ステータス行を常に表示
-set laststatus=2
-" ウィンドウの右下にまだ実行していない入力中のコマンドを表示
-set showcmd
-" 省略されずに表示
-set display=lastline
-" 行をまたいで移動
-set whichwrap=b,s,h,l,<,>,[,],~
-
-" [ 🔊 Sound ]
-"---------------
-" ベル音を鳴らさない
-set visualbell
-
-
-" [ 🔍 Search ]
-"----------------
-" 検索文字列入力時に順次対象文字列にヒットさせる
-set incsearch
-" 検索文字列が小文字の場合は大文字小文字を区別なく検索する
-set ignorecase
-" 検索時に大文字を含んでいたら大/小を区別
+set surround
+set clipboard=unnamedplus
 set smartcase
+set incsearch
+set hlsearch
+set timeout
+set timeoutlen=1000
+let mapleader = ' '
 
-" [ 📁 File system ]
-"---------------------
-" swapfileを作らない
-set noswapfile
-" クリップボードの共有化
-set clipboard=unnamed,unnamedplus
 
-" [ ⌨️ Key ]
-"-------------
-" メソッド移動
-nnoremap [m :<C-u>action MethodUp<CR>
-nnoremap ]m :<C-u>action MethodDown<CR>
-" jの2回押しでノーマルモードに戻る
-inoremap jj <ESC>
-" Escの2回押しでハイライト消去
-nnoremap <ESC><ESC> :nohlsearch<CR><ESC>
-"x キー削除でデフォルトレジスタに入れない
-nnoremap x "_x
-vnoremap x "_x
-" j, k による移動を折り返されたテキストでも自然に振る舞うように変更
-nnoremap j gj
-nnoremap k gk
+" Memo
+" <Leader>: Util
+" ,: Edit
+" \\: config
+
+" Get commandlist
+" :actionlist
+
+" available key
+" <A-Up>
+" <A-Down>
+" <A-S-Up>
+" <A-S-Down>
+" <A-C-S-Up>
+" <A-C-S-Down>
+" <A-C-S-Left>
+" <A-C-S-Right>
+" <C-S-Left>
+" <C-S-Right>
+" <A-C-S-H>
+" <A-C-S-L>
+" {, }
+
+
+" Basic
+nnoremap \\r :source ~/.ideavimrc<CR>
+noremap x "_x
+noremap ,d "_d
+noremap ,D "_D
+nnoremap ,p :<C-u>action $Paste<CR>
