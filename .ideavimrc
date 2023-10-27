@@ -31,6 +31,5 @@ noremap   <Up>     <nop>
 noremap   <Down>   <nop>
 noremap   <Left>   <nop>
 noremap   <Right>  <nop>
-set backspace=0
 
 inoremap <silent> jj <ESC>
