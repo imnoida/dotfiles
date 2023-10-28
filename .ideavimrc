@@ -1,22 +1,51 @@
+"----------Plugins
+set sneak
+set surround
+set which-key
+set notimeout
+set commentary
+set highlightedyank
+set textobj-entire
+
+"---------- Options
 set clipboard=unnamedplus
+" search
+set wildignorecase
+set infercase
+set ignorecase
 set smartcase
 set incsearch
 set hlsearch
-set timeout
-set timeoutlen=1000
+" indent
+set breakindent
+set autoindent
+set smartindent
+" tab
+set expandtab
+set smarttab
+" display
 set relativenumber
-set surround
+" sound
+set visualbell
+
+"---------- Variables
 let mapleader = " "
 
-" Basic
-nnoremap \\r :source ~/.ideavimrc<CR>
+"---------- Original Keymaps
+let g:WhichKey_DefaultDelay = 0
+
+" basic
+let g:WhichKeyDesc_misc = "<leader>\\ misc"
+let g:WhichKeyDesc_reload_vimrc = "<leader>\\r IdeaVim.ReloadVimRc.reload"
+nnoremap <leader>\\r :<C-u>action IdeaVim.ReloadVimRc.reload<CR>
 noremap x "_x
 noremap ,d "_d
 noremap ,D "_D
-nnoremap ,p :<C-u>action $Paste<CR>
+nnoremap <ESC><ESC> :nohlsearch<CR>
 
-" Move
-nnoremap S :<C-u>action KJumpAction<CR>
+" move
+nnoremap s <Plug>(sneak_s)
+nnoremap S :<C-u>action KJumpAction.Char2<CR>
 
 " disable cursor keys
 vnoremap  <Up>     <nop>
@@ -32,4 +61,6 @@ noremap   <Down>   <nop>
 noremap   <Left>   <nop>
 noremap   <Right>  <nop>
 
+" mode switching
 inoremap <silent> jj <ESC>
+inoremap <silent> jk <ESC>
