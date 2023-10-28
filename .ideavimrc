@@ -1,5 +1,4 @@
 "----------Plugins
-set sneak
 set surround
 set which-key
 set notimeout
@@ -24,7 +23,8 @@ set smartindent
 set expandtab
 set smarttab
 " display
-set relativenumber
+set number
+set rnu
 " sound
 set visualbell
 
@@ -44,7 +44,6 @@ noremap ,D "_D
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
 " move
-nnoremap s <Plug>(sneak_s)
 nnoremap S :<C-u>action KJumpAction.Char2<CR>
 
 " disable cursor keys
