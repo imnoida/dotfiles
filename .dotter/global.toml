@@ -4,6 +4,7 @@
 depends = []
 
 [default.files]
+".config/nushell" = "~/.config/nushell"
 ".config/nvim" = "~/.config/nvim"
 ".ideavimrc" = "~/.ideavimrc"
 
