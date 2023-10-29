@@ -10,6 +10,10 @@ Launch cmd with administrator.
 mklink /d %userprofile%\.config %appdata%
 ```
 
+### Download nerd fonts (JetBrainsMono Nerd Font)
+
+[https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip]
+
 ### Setup dotfiles
 
 If you are using PowerShell, by default it will not load commands from the current location.
@@ -24,7 +28,7 @@ Replace with `.\dotter`
 1. Make sure there are no errors.
 `dotter deploy -d`
 1. Let's deploy (Back up your own files if necessary as they may be overwritten)
-`dotter deploy`
+`dotter deploy -f`
 
 ### How to undeploy?
 
