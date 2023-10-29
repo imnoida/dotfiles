@@ -12,7 +12,7 @@ end
 
 -- This is where you actually apply your config choices
 
-config.font = wezterm.font('JetBrainsMono Nerd Font')
+config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.use_ime = true
 config.color_scheme = "One Half Black (Gogh)"
 config.default_prog = { "nu" }
