@@ -4,6 +4,7 @@
 depends = []
 
 [default.files]
+".config/Code/User" = "~/.config/Code/User"
 ".config/nushell" = "~/.config/nushell"
 ".config/nvim" = "~/.config/nvim"
 ".config/powershell" = "~/.config/powershell"
