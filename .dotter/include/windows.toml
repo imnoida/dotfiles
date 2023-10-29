@@ -1,0 +1,7 @@
+[default]
+depends = []
+
+[default.files]
+"Appdata/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json" = "~/Appdata/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
+
+[default.variables]
