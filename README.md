@@ -33,3 +33,15 @@ Replace with `.\dotter`
 ### How to undeploy?
 
 `dotter undeploy -y`
+
+### app
+- vscode
+- nushell
+- neovim
+- powershell
+- wezterm
+
+### commandline
+- starship
+- fzf
+- zoxide

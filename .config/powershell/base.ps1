@@ -3,3 +3,6 @@
 
 # Setup Starship
 Invoke-Expression (&starship init powershell)
+
+# Setup zoxide
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
