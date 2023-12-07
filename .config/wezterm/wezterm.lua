@@ -1,25 +1,42 @@
--- Pull in the wezterm API
-local wezterm = require 'wezterm'
+require 'format'
+require 'status'
+require 'event'
 
--- This table will hold the configuration.
+local wezterm = require 'wezterm';
+
 local config = {}
 
--- In newer versions of wezterm, use the config_builder which will
--- help provide clearer error messages
 if wezterm.config_builder then
-    config = wezterm.config_builder()
+  config = wezterm.config_builder()
 end
 
--- This is where you actually apply your config choices
-
-config.font = wezterm.font("JetBrainsMono Nerd Font")
-config.use_ime = true
-config.color_scheme = "One Half Black (Gogh)"
 config.default_prog = { "nu" }
-config.max_fps = 165
 
--- Acrylic configurations
-config.window_background_opacity = 80.0
+-- keybinds
+config.disable_default_key_bindings = true
+config.keys = require('keybinds').keys
+config.key_tables = require('keybinds').key_tables
+config.leader = { key = ",", mods = "CTRL", timeout_milliseconds = 2000 }
 
--- and finally, return the configuration to wezterm
+-- colors
+config.color_scheme = "Catppuccin Mocha"
+config.window_background_opacity = 0.93
+
+-- font
+config.font = require("wezterm").font("Firge35Nerd Console")
+config.font_size = 13.0
+config.window_frame = {
+  font = wezterm.font { family ='Roboto', weight = 'Bold' },
+  font_size = 11.0,
+}
+
+-- status
+config.status_update_interval = 1000
+
+-- window decorations
+config.window_decorations = "RESIZE"
+
+-- mouse binds
+config.mouse_bindings = require('mousebinds').mouse_bindings
+
 return config
