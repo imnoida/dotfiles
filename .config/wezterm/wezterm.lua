@@ -7,7 +7,7 @@ local wezterm = require 'wezterm';
 local config = {}
 
 if wezterm.config_builder then
-  config = wezterm.config_builder()
+    config = wezterm.config_builder()
 end
 
 config.default_prog = { "nu" }
@@ -26,8 +26,8 @@ config.window_background_opacity = 0.93
 config.font = require("wezterm").font("Firge35Nerd Console")
 config.font_size = 13.0
 config.window_frame = {
-  font = wezterm.font { family ='Roboto', weight = 'Bold' },
-  font_size = 11.0,
+    font = wezterm.font { family = 'Roboto', weight = 'Bold' },
+    font_size = 11.0,
 }
 
 -- status
