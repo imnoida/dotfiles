@@ -1,5 +1,6 @@
 # Sets user-defined palette
 palette = "catppuccin_mocha"
+add_newline = false
 
 [character]
 # Note the use of Catppuccin color 'maroon'
@@ -11,6 +12,12 @@ vimcmd_symbol = "[❮](green)"
 truncation_length = 4
 # Catppuccin 'lavender'
 style = "bold lavender"
+
+[python]
+disabled = true
+
+[nodejs]
+disabled = true
 
 # palette tables should be last in the config ⚓️
 [palettes.catppuccin_macchiato]
