@@ -2,14 +2,6 @@
 
 ## Installation
 
-### Make symbolic link (for Windows)
-
-Launch cmd with administrator.
-
-```bash
-mklink /d %userprofile%\.config %appdata%
-```
-
 ### Download nerd fonts (JetBrainsMono Nerd Font)
 
 [https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip]
@@ -19,6 +11,9 @@ mklink /d %userprofile%\.config %appdata%
 If you are using PowerShell, by default it will not load commands from the current location.
 Replace with `.\dotter`
 
+1. Edit powershell profile
+Location `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
+Append this command `ls ~\.config\powershell\*.ps1|%{&$_}`
 1. Clone this repository
 `git clone https://github.com/imnoida/dotfiles.git`
 1. Rename global.toml (e.g. bak_global.toml)
@@ -45,3 +40,5 @@ Replace with `.\dotter`
 - starship
 - fzf
 - zoxide
+- ripgrep
+- scoop-completion

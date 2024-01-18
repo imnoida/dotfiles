@@ -3,5 +3,7 @@ depends = []
 
 [default.files]
 "Appdata/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json" = "~/Appdata/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
+"Appdata/Roaming/Code/User" = "~/Appdata/Roaming/Code/User"
+"Appdata/Roaming/nushell" = "~/Appdata/Roaming/nushell"
 
 [default.variables]
