@@ -7,7 +7,6 @@ depends = []
 ".config/nvim" = "~/.config/nvim"
 ".config/powershell" = "~/.config/powershell"
 ".config/starship.toml" = "~/.config/starship.toml"
-".config/vivaldi" = "~/.config/vivaldi"
 ".config/wezterm" = "~/.config/wezterm"
 ".ideavimrc" = "~/.ideavimrc"
 
