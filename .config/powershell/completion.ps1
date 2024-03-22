@@ -16,3 +16,6 @@ Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
             [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
         }
 }
+
+# github cli completion
+Invoke-Expression -Command $(gh completion -s powershell | Out-String)
