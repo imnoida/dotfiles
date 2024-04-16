@@ -17,5 +17,5 @@ Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
         }
 }
 
-# github cli completion
-Invoke-Expression -Command $(gh completion -s powershell | Out-String)
+# git completion
+Import-Module posh-git
